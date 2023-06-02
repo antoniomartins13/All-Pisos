@@ -1,0 +1,60 @@
+.secao-orcamento{
+    background-image: linear-gradient(110deg ,#72009b ,#530071);
+}
+
+.secao-orcamento div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.secao-orcamento div p{
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 4px 4px 4px #0000002d;
+    font-weight: 600;
+}
+
+.btn-wp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    margin: 20px 0;
+    box-shadow: 3px 3px 5px 3px #0000002d;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    font-weight: 700;
+    transition: all 0.5s;    
+}
+
+.btn-wp img{
+    object-fit: contain;
+    height: 40px;
+}
+
+.btn-wp:hover{
+    background-color: #9e00d7;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .secao-orcamento div{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 680px){
+    .secao-orcamento div p{
+        font-size: 13px;
+    }
+    .btn-wp img{
+        height: 30px;
+    }
+}

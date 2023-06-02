@@ -1,0 +1,35 @@
+footer{
+    background-color: #530071;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: gold;
+}
+
+.voltar-topo{
+    position: absolute;
+    top: -15px;
+    right: 15%;
+    box-shadow: 0px 0px 5px 3px #7f7f7f41;
+    border-radius: 15px;
+}
+
+.voltar-topo img{
+    height: 30px;
+}
+@media (max-width: 680px){
+    footer{
+        font-size: 11px;
+    }
+    .voltar-topo{
+        top: -19px;
+    }
+}

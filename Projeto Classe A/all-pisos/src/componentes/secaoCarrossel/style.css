@@ -1,0 +1,40 @@
+.secao-inspiracoes p{
+    font-size:  22px;
+    font-weight: 600;
+    text-align: center;
+    padding:  80px 0 0 0;
+}
+
+.secao-carrossel{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 100px 0px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.inner{
+    display: flex;
+}
+
+.projeto{
+    min-height: 200px;
+    min-width: 300px;
+    padding: 15px;
+}
+
+.projeto img{
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px #0000003b;
+    pointer-events: none;
+}
+
+.carrossel{
+    cursor: grab;
+    overflow: hidden;
+}
+

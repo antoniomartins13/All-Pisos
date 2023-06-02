@@ -1,0 +1,222 @@
+.secao-ambientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-categoria{
+    align-self: flex-start;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: solid 1px #530071;
+    padding-left: 20px;
+}
+
+.input-categoria input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+}
+
+.input-categoria label{
+    align-self: flex-start;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.input-categoria svg{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    font-size: 25px;
+    color: #530071;
+}
+
+.input-categoria svg:nth-last-of-type(1){
+    bottom: 5px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.secao-ambientes h2{
+    color: #530071;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    align-self: flex-start;
+    cursor: default;
+}
+
+.secao-ambientes a{
+    color: #530071;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.projetos-inspiracoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+    gap: 15px;
+    padding: 30px;
+}
+
+.projeto-inspiracao{
+    min-width: 300px;
+    width: calc(100%/2 - 50px);
+    height: 60vh;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    box-shadow: 3px 3px 5px 3px #00000026;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.projeto-inspiracao-pequeno:hover{
+    transform: scale(1.01);
+}
+
+.projeto-inspiracao img{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.projeto-inspiracao-pequeno{
+    transition: all .6s;
+}
+
+.projeto-inspiracao-pequeno div{
+    padding: 10px;
+}
+
+.projeto-inspiracao-pequeno h3{
+    font-size: 24px;
+    color: #530071;
+    font-weight: 800
+}
+
+.projeto-inspiracao-pequeno p{
+    color: #530071;
+    font-weight: 600
+}
+
+.projeto-inspiracao-pequeno span{
+    color: #000;
+    font-weight: 300;
+}
+
+.projeto-inspiracao-grande{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000006b;
+    cursor: default;
+}
+
+.card-inspiracao-grande div svg{
+    color: #000;
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    cursor: pointer;
+}
+
+.card-inspiracao-grande div svg:hover{
+    color: #5d009f;
+}
+
+.card-inspiracao-grande{
+    width: 60vw;
+    height: 80vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-inspiracao-grande img{
+    height: 100%;
+    width: 50%;
+    object-fit: fill;
+}
+
+.card-inspiracao-grande div{
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+}
+
+.card-inspiracao-grande div h3{
+    font-size: 38px;
+    color: #530071;
+    font-weight: 700;
+}
+
+.card-inspiracao-grande div p{
+    font-size: 18px;
+    color: #530071;
+    font-weight: 500;
+}
+
+.card-inspiracao-grande div span{
+    font-size: 16px;
+    color:#000;
+    font-weight: 300;
+}
+
+@media (max-width: 769px) {
+    .card-inspiracao-grande{
+        flex-direction: column;
+    }
+    .card-inspiracao-grande img{
+        height: 50%;
+        width: 100%;
+    }
+    .card-inspiracao-grande div{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 421px) {
+    .projeto-inspiracao{
+        min-width: 260px;
+    }
+    .card-inspiracao-grande{
+        height: 90vh;
+        width: 80vw;
+    }
+    .card-inspiracao-grande div h3{
+        font-size: 24px;
+    }
+    .card-inspiracao-grande div p{
+        font-size: 16px;
+    }
+    .card-inspiracao-grande div span{
+        font-size: 12px;
+    }
+    .card-inspiracao-grande div svg{
+        top: 5%;
+        right: 10%;
+    }
+}

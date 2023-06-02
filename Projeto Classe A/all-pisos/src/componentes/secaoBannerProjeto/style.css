@@ -1,0 +1,22 @@
+.secao-banner-projeto{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../public/assets/banner-projetos.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-banner-projeto h2{
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 425px) {
+    .secao-banner-projeto h2{
+        font-size: 32px;
+    }
+}
