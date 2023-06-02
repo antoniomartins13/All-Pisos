@@ -26,7 +26,8 @@ export default function ProjetoAmbiente({projeto}){
                         <AiOutlineClose onClick={ alterarProjetoAtivo }/>
                         <h3>PROJETO</h3>
                         <p>AMBIENTE: <span>{projeto.ambiente}</span></p>
-                        <p>PROFISSIONAL: <span>{projeto.credito}</span></p>
+                        {projeto.credito !== '' &&
+                        <p>PROFISSIONAL: <span>{projeto.credito}</span></p>}
                         <p>PRODUTO: <span>{projeto.produtos}</span></p>
                     </div>
                 </div>  

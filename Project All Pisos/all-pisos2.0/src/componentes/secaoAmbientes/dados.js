@@ -1,57 +1,45 @@
 
 const projetos = [
     {   
-        credito: 'Arq. gadfafadf', 
+        credito: 'Arq. Izabella Franca', 
         imagem: '/assets/imagens/projeto1.jpg', 
-        produtos: "Strufaldi Samoa 20x20cm, Borda - Anamá Peito de pombo 50x50cm",
+        produtos: "Revestimento - Strufaldi Samoa, Borda - Anama Peito de pombo",
         ambiente: 'Piscina' 
     }, 
     {   
-        credito: '', 
+        credito: 'Arq. Marcos Arthur', 
         imagem: '/assets/imagens/projeto2.jpg', 
-        produtos: '',
+        produtos: 'Revestimento - Strufaldi Samoa, Borda - Anama Travertino, Piso - Eliane Bosco Mel',
         ambiente: 'Piscina' 
     }, 
     {   
-        credito: '', 
+        credito: 'Arq. Gilvan Mota', 
         imagem: '/assets/imagens/projeto3.jpg', 
-        produtos: '',
+        produtos: 'Revestimento - Ceusa Frisado Liso ',
         ambiente: 'Faixada'
     }, 
     {   
-        credito: '', 
+        credito: 'Elessandro Silva', 
         imagem: '/assets/imagens/projeto4.jpg', 
-        produtos: '',
-        ambiente: 'Sala de estar' 
+        produtos: 'Piso - Castelli Tasso Lux AC',
+        ambiente: 'Hall de Entrada' 
     }, 
     {   
-        credito: '', 
+        credito: 'Arq. Rodrigo Santana', 
         imagem: '/assets/imagens/projeto5.jpg', 
-        produtos: '',
+        produtos: 'Piso - Castelli Sant Andrea out, Itagrês Ilheus Canela | Revestimento - Pointer E-motion, Itagrês Betonê white, Eliane Forma Branco',
         ambiente: 'Área gourmet' 
     }, 
     {   
         credito: '', 
-        imagem: '/assets/imagens/projeto6.jpg', 
-        produtos: '',
-        ambiente: 'Banheiro' 
-    }, 
-    {   
-        credito: '', 
         imagem: '/assets/imagens/projeto7.jpg', 
-        produtos: '',
+        produtos: 'Revestimento - Eliane Mêtro white',
         ambiente: 'Banheiro' 
     }, 
     {   
-        credito: '', 
-        imagem: '/assets/imagens/projeto9.jpg', 
-        produtos: '', 
-        ambiente: 'Faixada'
-    }, 
-    {   
-        credito: '', 
+        credito: 'Arq. Hugo Lobão', 
         imagem:  '/assets/imagens/projeto10.jpg',
-        produtos: '',
+        produtos: 'Piso - Castelli Sant Andrea out',
         ambiente: 'Faixada'
     }
 ]

@@ -24,8 +24,8 @@ export default function SecaoInspiracoesContainer(){
                     <p>ÁREAS GOURMET</p>
                 </a>
 
-                <a href='/inspiracoes/ambientes?filtro=sala-de-estar' className="card-inspiracao">
-                    <p>SALAS DE ESTAR</p>
+                <a href='/inspiracoes/ambientes?filtro=hall' className="card-inspiracao">
+                    <p>Hall de Entrada</p>
                 </a>
 
                 <a href='/inspiracoes/ambientes?filtro=piscina' className="card-inspiracao">
