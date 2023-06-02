@@ -1,0 +1,1 @@
+A 2.0 version of this project, with the section inspirção and a search bar
