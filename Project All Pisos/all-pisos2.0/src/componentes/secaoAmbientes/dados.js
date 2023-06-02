@@ -3,13 +3,13 @@ const projetos = [
     {   
         credito: 'Arq. Izabella Franca', 
         imagem: '/assets/imagens/projeto1.jpg', 
-        produtos: "Revestimento - Strufaldi Samoa, Borda - Anama Peito de pombo",
+        produtos: "Revestimento - Strufaldi Samoa | Borda - Anama Peito de pombo",
         ambiente: 'Piscina' 
     }, 
     {   
         credito: 'Arq. Marcos Arthur', 
         imagem: '/assets/imagens/projeto2.jpg', 
-        produtos: 'Revestimento - Strufaldi Samoa, Borda - Anama Travertino, Piso - Eliane Bosco Mel',
+        produtos: 'Revestimento - Strufaldi Samoa, Borda - Anama Travertino | Piso - Eliane Bosco Mel',
         ambiente: 'Piscina' 
     }, 
     {   
