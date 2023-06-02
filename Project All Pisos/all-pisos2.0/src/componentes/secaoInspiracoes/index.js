@@ -9,8 +9,8 @@ export default function SecaoInspiracoes(){
             </div>
 
             <div className="fotos-inspiracao">
-                <a href='/inspiracoes/ambientes?filtro=faixada' className="foto-inspiracao">                  
-                    <p className="legenda-foto-inspiracao">FAIXADAS</p>
+                <a href='/inspiracoes/ambientes?filtro=fachada' className="foto-inspiracao">                  
+                    <p className="legenda-foto-inspiracao">FACHADAS</p>
                 </a>
 
                 <a href='/inspiracoes/ambientes?filtro=gourmet' className="foto-inspiracao">

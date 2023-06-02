@@ -23,7 +23,7 @@ const cards =[
         imagem:'/assets/rodape.png'
     },
     
-    {   nome: 'Panéis Ripado', 
+    {   nome: 'Panéis Ripados', 
         imagem:'/assets/ripado.png'
     },
     

@@ -16,7 +16,7 @@ const projetos = [
         credito: 'Arq. Gilvan Mota', 
         imagem: '/assets/imagens/projeto3.jpg', 
         produtos: 'Revestimento - Ceusa Frisado Liso ',
-        ambiente: 'Faixada'
+        ambiente: 'Fachada'
     }, 
     {   
         credito: 'Elessandro Silva', 
@@ -33,14 +33,14 @@ const projetos = [
     {   
         credito: '', 
         imagem: '/assets/imagens/projeto7.jpg', 
-        produtos: 'Revestimento - Eliane Mêtro white',
+        produtos: 'Revestimento - Eliane Metro white',
         ambiente: 'Banheiro' 
     }, 
     {   
         credito: 'Arq. Hugo Lobão', 
         imagem:  '/assets/imagens/projeto10.jpg',
         produtos: 'Piso - Castelli Sant Andrea out',
-        ambiente: 'Faixada'
+        ambiente: 'Fachada'
     }
 ]
 

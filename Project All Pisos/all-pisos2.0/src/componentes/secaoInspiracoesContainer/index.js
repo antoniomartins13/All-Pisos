@@ -8,8 +8,8 @@ export default function SecaoInspiracoesContainer(){
             <h2>INSPIRAÇÃO</h2>
             <div className="secao-inspiracao-container limitar-largura">
 
-                <a  href='/inspiracoes/ambientes?filtro=faixada' className="card-inspiracao">
-                    <p>FAIXADAS</p>
+                <a  href='/inspiracoes/ambientes?filtro=fachada' className="card-inspiracao">
+                    <p>FACHADAS</p>
                 </a>
 
                 <a href='/inspiracoes/ambientes?filtro=banheiro' className="card-inspiracao">
