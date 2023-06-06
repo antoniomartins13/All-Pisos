@@ -88,10 +88,10 @@
         gap: 10px;
     }
     .foto-inspiracao{
-        width: 40vw;
+        width: 60vw;
     }
     .foto-inspiracao:hover{
-        width: 40vw;
+        width: 60vw;
     }
 }
 @media (max-width: 768px) {
@@ -100,12 +100,12 @@
         gap: 20px;
     }
     .foto-inspiracao{
-        width: 60vw;
+        width: 80vw;
         height: 70vh;
         writing-mode: initial;
     }
     .foto-inspiracao:hover{
-        width: 60vw;
+        width: 80vw;
     }
     .foto-inspiracao p{
         transform: rotate(0deg);
