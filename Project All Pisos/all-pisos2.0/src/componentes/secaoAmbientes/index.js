@@ -19,24 +19,17 @@ export default function SecaoAmbientes() {
     function filtraAmbiente() {
         const inputFilter = document.querySelector('.input-categoria input');
         const cardsProjeto = document.querySelectorAll('.projeto-inspiracao');
-        if(inputFilter !== ''){
-            for (const cardProjeto of cardsProjeto) {
-                const ambiente = cardProjeto.querySelector('div h3')
-                const ambienteMinusculo = ambiente.textContent.toLowerCase()
-
-                const produto = cardProjeto.querySelector('div p span')
-                const produtoMinusculo = produto.textContent.toLowerCase()
-
-                const textoDoFiltro = inputFilter.value.toLowerCase()
-
-                if(!ambienteMinusculo.includes(textoDoFiltro) && !produtoMinusculo.includes(textoDoFiltro)){
-                    cardProjeto.style.display = 'none'
-                }else{
-                    cardProjeto.style.display = 'block'
-                }
-            }
-        }else{
-            for (const cardProjeto of cardsProjeto) {
+        for (const cardProjeto of cardsProjeto) {
+            const ambiente = cardProjeto.querySelector('div h3')
+            const ambienteMinusculo = ambiente.textContent.toLowerCase()
+            
+            const produto = cardProjeto.querySelector('div p span')
+            const produtoMinusculo = produto.textContent.toLowerCase()
+            const textoDoFiltro = inputFilter.value.toLowerCase()
+            
+            if(!ambienteMinusculo.includes(textoDoFiltro) && !produtoMinusculo.includes(textoDoFiltro)){
+                cardProjeto.style.display = 'none'
+            }else{
                 cardProjeto.style.display = 'block'
             }
         }
@@ -44,7 +37,7 @@ export default function SecaoAmbientes() {
 
     function limpaAmbiente(){
         const inputFilter = document.querySelector('.input-categoria input');
-        inputFilter.value = ''
+        inputFilter.value = ""
         filtraAmbiente()
     }
 
@@ -58,7 +51,7 @@ export default function SecaoAmbientes() {
                     id="filtra-categoria" 
                     placeholder="Ambiente"
                     defaultValue={parametro}
-                    onInput={ filtraAmbiente }    
+                    onChange={ filtraAmbiente }    
                 />
                 <CiSearch />
                 <AiOutlineClose onClick={ limpaAmbiente }/> 

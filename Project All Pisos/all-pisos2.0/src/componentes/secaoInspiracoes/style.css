@@ -107,6 +107,9 @@
     .foto-inspiracao:hover{
         width: 80vw;
     }
+    .fotos-inspiracao:has(.foto-inspiracao:hover) .foto-inspiracao:not(:hover){
+        width: 80vw;
+    }
     .foto-inspiracao p{
         transform: rotate(0deg);
         backdrop-filter: blur(10px);
