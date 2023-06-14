@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import './style.css';
 import { Link } from "react-router-dom";
 import { AiOutlineClose } from 'react-icons/ai'
@@ -10,7 +10,8 @@ export default function SecaoAmbientes() {
 
     const documentUrl = document.URL
     const localizacaoIgual = documentUrl.indexOf('=')  
-    const parametro = localizacaoIgual !== -1 ? documentUrl.substring(localizacaoIgual + 1) : ''
+    const parametro = localizacaoIgual !== -1 ? documentUrl.substring(localizacaoIgual + 1) : '';
+    const [botaoLimpar, setBotaoLimpar] = useState(false)
 
     useEffect(() => {
         filtraAmbiente()
@@ -19,18 +20,27 @@ export default function SecaoAmbientes() {
     function filtraAmbiente() {
         const inputFilter = document.querySelector('.input-categoria input');
         const cardsProjeto = document.querySelectorAll('.projeto-inspiracao');
-        for (const cardProjeto of cardsProjeto) {
-            const ambiente = cardProjeto.querySelector('div h3')
-            const ambienteMinusculo = ambiente.textContent.toLowerCase()
-            
-            const produto = cardProjeto.querySelector('div p span')
-            const produtoMinusculo = produto.textContent.toLowerCase()
-            const textoDoFiltro = inputFilter.value.toLowerCase()
-            
-            if(!ambienteMinusculo.includes(textoDoFiltro) && !produtoMinusculo.includes(textoDoFiltro)){
-                cardProjeto.style.display = 'none'
-            }else{
+        if(inputFilter.value === ''){
+            setBotaoLimpar(false)
+            cardsProjeto.forEach(cardProjeto => {
                 cardProjeto.style.display = 'block'
+            })
+        }
+        else{
+            setBotaoLimpar(true)
+            for (const cardProjeto of cardsProjeto) {
+                const ambiente = cardProjeto.querySelector('div h3')
+                const ambienteMinusculo = ambiente.textContent.toLowerCase()
+                
+                const produto = cardProjeto.querySelector('div p span')
+                const produtoMinusculo = produto.textContent.toLowerCase()
+                const textoDoFiltro = inputFilter.value.toLowerCase()
+                
+                if(!ambienteMinusculo.includes(textoDoFiltro) && !produtoMinusculo.includes(textoDoFiltro)){
+                    cardProjeto.style.display = 'none'
+                }else{
+                    cardProjeto.style.display = 'block'
+                }
             }
         }
     }
@@ -53,8 +63,8 @@ export default function SecaoAmbientes() {
                     defaultValue={parametro}
                     onChange={ filtraAmbiente }    
                 />
-                <CiSearch />
-                <AiOutlineClose onClick={ limpaAmbiente }/> 
+                <CiSearch className="icn-buscar"/>
+                {botaoLimpar && <AiOutlineClose className="botao-limpar" onClick={ limpaAmbiente }/>}
             </div>    
 
             <div className="projetos-inspiracoes">

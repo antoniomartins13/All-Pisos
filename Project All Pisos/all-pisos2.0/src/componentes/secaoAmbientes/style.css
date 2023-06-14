@@ -33,13 +33,16 @@
 
 .input-categoria svg{
     position: absolute;
-    bottom: 5px;
-    right: 0;
     font-size: 25px;
     color: #530071;
 }
 
-.input-categoria svg:nth-last-of-type(1){
+.icn-buscar{
+    bottom: 5px;
+    right: 0;
+}
+
+.botao-limpar{
     bottom: 5px;
     right: 30px;
     cursor: pointer;
