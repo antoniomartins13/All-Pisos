@@ -1,0 +1,114 @@
+.inspiracao-container{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.inspiracao-container h2{
+    color: #530071;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.secao-inspiracao-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card-inspiracao{
+    position: relative;
+    overflow: hidden;
+    width: calc(100% / 3 - 30px);
+    height: 30vh;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+    transition: all .5s;
+}
+
+.card-inspiracao:hover{
+    scale: 1.02;
+}
+
+.secao-inspiracao-container:has(.card-inspiracao:hover) .card-inspiracao:not(:hover){
+    filter: grayscale(1);
+    scale: .99;
+}
+
+.card-inspiracao:nth-of-type(1){
+    background: url('../../../public/assets/imagens/projeto9.jpg') center no-repeat;
+    background-size: cover;
+}
+.card-inspiracao:nth-of-type(2){
+    background: url('../../../public/assets/imagens/projeto7.jpg') center no-repeat;
+    background-size: cover;
+}
+.card-inspiracao:nth-of-type(4){
+    background: url('../../../public/assets/imagens/projeto5.jpg') center no-repeat;
+    background-size: cover;
+}
+.card-inspiracao:nth-of-type(5){
+    background: url('../../../public/assets/imagens/projeto4.jpg') center no-repeat;
+    background-size: cover;
+}
+.card-inspiracao:nth-of-type(6){
+    background: url('../../../public/assets/imagens/projeto1.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.btn-ver-todos{
+    background-color: #530071;
+    padding: 30px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5%;
+    font-size: 28px;
+    box-shadow: 3px 3px 9px 3px #0000002d;
+    transition: color .9s, border .9s,;
+}
+
+.btn-ver-todos:hover{
+    color: #530071;
+    background-color: #fff;
+    border: #530071 solid 1px;
+}
+
+@media (max-width: 768px) {
+    .card-inspiracao{
+        width: calc(100% / 2 - 30px);
+        font-size: 18px;
+    }
+    .btn-ver-todos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        width: calc(100% / 2 - 30px);
+        font-size: 18px;
+    }
+}
+@media (max-width: 376px) {
+    .card-inspiracao{
+        font-size: 14px;
+    }
+    .btn-ver-todos{
+        font-size: 8px;
+    }
+}
+@media (max-width: 321px) {
+    .card-inspiracao{
+        height: 20vh;
+    }
+    .btn-ver-todos{
+        height: 20vh;;
+    }
+}

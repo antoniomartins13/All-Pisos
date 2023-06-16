@@ -1,0 +1,118 @@
+
+.secao-inspiracao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 0px;
+}
+
+.fotos-inspiracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto-inspiracao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+    writing-mode:vertical-rl;
+    color: #fff;
+    text-decoration: none;
+    transition: all .6s;
+}
+
+.foto-inspiracao:hover{
+    width: 600px;
+}
+
+.fotos-inspiracao:has(.foto-inspiracao:hover) .foto-inspiracao:not(:hover){
+    width: 200px;
+}
+
+.foto-inspiracao:nth-of-type(1){
+    background: url('../../../public/assets/imagens/projeto9.jpg') center no-repeat;
+    background-size: cover;
+}
+.foto-inspiracao:nth-of-type(2){
+    background: url('../../../public/assets/imagens/projeto5.jpg') center no-repeat;
+    background-size: cover;
+}
+.foto-inspiracao:nth-of-type(3){
+    background: url('../../../public/assets/imagens/projeto7.jpg') center no-repeat;
+    background-size: cover;
+}
+.foto-inspiracao:nth-of-type(4){
+    background: url('../../../public/assets/imagens/projeto1.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.legenda-foto-inspiracao{
+    font-size: 20px;
+    font-weight: 300;
+    transform: rotate(180deg);
+}
+
+.btn-galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    width: 200px;
+    margin: 30px 0;
+    box-shadow: 3px 3px 5px 3px #0000002d;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #530071;
+    font-weight: 700;
+    transition-duration:  0.5s;    
+}
+
+.btn-galeria:hover{
+    background-color: #fff;
+    transform: scale(1.05);
+    border: 1px solid #530071;
+    color: #530071;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1250px) {
+    .fotos-inspiracao{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .foto-inspiracao{
+        width: 60vw;
+    }
+    .foto-inspiracao:hover{
+        width: 60vw;
+    }
+}
+@media (max-width: 768px) {
+    .fotos-inspiracao{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .foto-inspiracao{
+        width: 80vw;
+        height: 70vh;
+        writing-mode: initial;
+    }
+    .foto-inspiracao:hover{
+        width: 80vw;
+    }
+    .fotos-inspiracao:has(.foto-inspiracao:hover) .foto-inspiracao:not(:hover){
+        width: 80vw;
+    }
+    .foto-inspiracao p{
+        transform: rotate(0deg);
+        backdrop-filter: blur(10px);
+        width: 100%;
+    }
+}

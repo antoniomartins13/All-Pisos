@@ -1,0 +1,32 @@
+.secao-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #f4f4f4;
+    padding: 0px 0px 30px 0px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-ver-mais{
+    padding: 10px 15px;
+    background-color: #530071;
+    color: #fff;
+    border: none;
+    box-shadow: 3px 3px 5px 3px #0000002d;
+    cursor: pointer;
+}
+
+.visivel{
+    display: block;
+}
+.nao-visivel{
+    display: none;
+}

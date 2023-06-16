@@ -1,0 +1,44 @@
+.secao-banner{
+    background-image: url('../../../public/assets/banner-home\(1\).jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 87vh;
+}
+
+.secao-banner div{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    background: #ffffff1c ;
+}
+
+.secao-banner div h2{
+    font-size: 36px;
+    color: #530071;
+    text-shadow: #00000099 0px 2px 4px; 
+    letter-spacing: 2px;
+}
+
+.secao-banner div h1{
+    font-size: 36px;
+    text-shadow: #00000099 0px 2px 4px; 
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 680px) {
+    .secao-banner div h2,
+    .secao-banner div h1{
+        font-size: 22px;
+    }
+    .secao-banner{
+        background-image: url('../../../public/assets/imagem-loja-lado.png');
+        background-attachment: scroll;
+        height: 70vh;
+    }
+}
