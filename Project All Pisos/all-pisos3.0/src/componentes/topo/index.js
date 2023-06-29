@@ -14,6 +14,7 @@ export default function Topo(){
                 <nav>
                     <Link to='/' className='topo-link'>HOME</Link>
                     <Link to='/inspiracoes' className='topo-link'>INSPIRAÇÕES</Link>
+                    <Link to='/newsletter' className="topo-link">NEWSLETTER</Link>
                 </nav>
             </div>
         </header>

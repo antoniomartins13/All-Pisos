@@ -1,0 +1,49 @@
+.pagina-inicial{
+    position: relative;
+}
+
+.modal-news-letter{
+    padding: 10px;
+    background-image: linear-gradient(110deg ,#72009b ,#530071);
+    opacity: .8;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    box-shadow: 3px 3px 5px 3px #00000024;
+}
+
+.modal-nl-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-nl-container p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.botoes-modal-nl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.botao-modal-nl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    border: solid 1px #72009b;
+    background-color: #fff;
+    color: #530071;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 3px #00000024
+}

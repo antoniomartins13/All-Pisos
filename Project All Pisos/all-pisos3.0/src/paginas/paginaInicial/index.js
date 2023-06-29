@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Topo from '../../componentes/topo/'
 import Rodape from '../../componentes/rodape/'
@@ -9,8 +9,16 @@ import SecaoInspiracoes from "../../componentes/secaoInspiracoes";
 import SecaoSobre from "../../componentes/secaoSobre";
 import SecaoContato from "../../componentes/secaoContatos";
 import SecaoNossoInstagram from "../../componentes/secaoNossoInstagram";
+import ModalNewsletter from "../../componentes/modalNewsletter";
 
-export default function paginaInicial(){
+export default function PaginaInicial(){
+    const [naoQuerNewsletter, setNaoQuerNewsletter] = useState(false)
+
+    useEffect(() => {
+        setTimeout(()=>{
+            setNaoQuerNewsletter(true)
+        }, 3000)
+    }, [])
     return(
         <div className="pagina-inicial">
             <Topo />
@@ -22,6 +30,7 @@ export default function paginaInicial(){
             <SecaoOrcamento paragrafo='VENHA FAZER UM ORÇAMENTO COM A GENTE'/>
             <SecaoContato instaAtivo={false} />
             <SecaoNossoInstagram />
+            {naoQuerNewsletter && <ModalNewsletter setNaoQuerNewsletter={ setNaoQuerNewsletter }/>}
             <SecaoOrcamento paragrafo='FAÇA UM ORÇAMENTO AQUI' />
             <Rodape />
         </div>
