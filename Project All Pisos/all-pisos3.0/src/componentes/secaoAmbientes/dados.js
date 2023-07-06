@@ -41,6 +41,12 @@ const projetos = [
         imagem:  '/assets/imagens/projeto10.jpg',
         produtos: 'Piso - Castelli Sant Andrea out',
         ambiente: 'Fachada'
+    },
+    {
+        credito: 'Arq. Gilvan Mota',
+        imagem: '/assets/imagens/loja-de-calcados.jpg',
+        produtos: 'Piso - Castelli Castelo de Chambord',
+        ambiente: 'Loja'
     }
 ]
 
